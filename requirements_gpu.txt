@@ -1,0 +1,34 @@
+# GPU-optimized requirements for Job Title Normalization API
+
+# Core dependencies
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.5.0
+numpy>=1.21.0
+
+# ONNX Runtime with GPU support
+onnxruntime-gpu>=1.16.0
+
+# Transformers for tokenization
+transformers>=4.35.0
+
+# Redis for caching
+redis>=5.0.0
+
+# GPU monitoring (optional but recommended)
+pynvml>=11.5.0
+
+# Performance monitoring
+psutil>=5.9.0
+
+# Additional optimizations
+torch>=2.0.0  # For potential PyTorch fallback
+tensorrt>=8.6.0  # For TensorRT optimization (if available)
+
+# Development and testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+httpx>=0.25.0
+
+# Logging and monitoring
+python-json-logger>=2.0.0
